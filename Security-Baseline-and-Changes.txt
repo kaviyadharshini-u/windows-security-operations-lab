@@ -1,0 +1,28 @@
+Security Baseline and Change Record
+
+Completed changes
+
+1. Windows Security platform
+Installed KB5007651 on 4 November 2026.
+Update history confirmed successful installation.
+No specific CVE remediation was established.
+
+2. Potentially unwanted app blocking
+Changed from Off to On.
+Enabled both Block apps and Block downloads.
+Verified the settings visually; blocking behaviour was
+not separately tested.
+
+3. Microsoft Edge
+Updated from version 156.0.4314.50 to 156.0.4314.58.
+After restarting Edge, its About page reported up to date.
+No specific CVE remediation was established.
+
+Observed protections
+Defender real-time protection, cloud-delivered protection,
+automatic sample submission and tamper protection were On.
+
+Limitations
+These are configuration and update observations, not
+Nessus findings. They do not establish that the VM is
+free from vulnerabilities.

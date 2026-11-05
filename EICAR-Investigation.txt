@@ -1,0 +1,43 @@
+Security Operations and Vulnerability Remediation Lab
+EICAR Detection and Response
+
+Analyst: Kaviyadharshini
+Test date: 4 November 2026
+Device: DESKTOP-JRSGF7A
+
+Purpose
+Test Microsoft Defender’s detection and remediation of the
+EICAR antivirus test file in an owned Windows lab VM.
+
+Scope
+This was a controlled test using EICAR, not real malware.
+The test file was not executed.
+
+Observed outcome
+Defender detected Virus:DOS/EICAR_Test_File in:
+C:\Users\SOCAdmin\Downloads\eicar.com.txt
+
+Event 1116 recorded detection at 17:30:48 UTC.
+Event 1117 recorded successful quarantine at 17:30:53 UTC.
+The remediation error code was 0x00000000, with no
+additional actions required.
+
+Conclusion
+Defender detected this test file and successfully quarantined
+it. This result does not prove protection against every threat.
+
+Evidence
+Exported log: EICAR-Detection-and-Action.evtx
+Channel: Microsoft-Windows-Windows Defender/Operational
+Detection: Event 1116, record 451
+Remediation: Event 1117, record 452
+
+Both events share Detection ID:
+{797F0C75-D77B-4008-9B06-6DCA7C989820}
+
+EVTX SHA256:
+A4C40C3BF70C8739C6944FE267B777BFC867ECC0411A1BD0BB4AFC524FF795E4
+
+The matching Detection ID links detection and remediation
+to the same occurrence. The hash provides a baseline for
+checking whether the exported file changes.
