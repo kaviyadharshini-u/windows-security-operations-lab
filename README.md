@@ -129,16 +129,26 @@ interface was reachable from outside the VM's NAT environment.
 
 ## Supporting records
 
-The following records were created and retained locally.
-They are not yet included in this repository:
+The following investigation records and screenshots are included:
 
-- EICAR investigation and selected event-log export
-- Event-log SHA256 record and transfer verification
-- Security baseline and change record
-- Vulnerability assessment scope
-- Vulnerability findings register
-- Reusable vulnerability management procedure
-- Before-and-after screenshots
+- [EICAR investigation](EICAR-Investigation.txt)
+- [Security baseline and changes](Security-Baseline-and-Changes.txt)
+- [Assessment scope](Vulnerability-Assessment-Scope.txt)
+- [Findings register](Vulnerability-Findings-Register.txt)
+- [Vulnerability management procedure](Vulnerability-Management-Procedure.txt)
+
+### Scan evidence
+
+- [Baseline certificate finding](12-Nessus-Certificate-Finding.png)
+- [Certificate output and affected endpoint](13-Nessus-Certificate-Output.png)
+- [Plugin details and severity](14-Nessus-Certificate-Score.png)
+- [Baseline scan configuration](15-Nessus-Scan-Information.png)
+- [Completed post-change scan](16-Nessus-Rescan-Completed.png)
+- [Original finding not reported in rescan](17-Nessus-Rescan-Certificate-Not-Reported.png)
+- [Event-log transfer hash verification](18-EICAR-Transfer-Hash-Verified.png)
+
+The original EVTX and uncropped evidence are retained privately.
+The hash screenshot is cropped to omit the personal file path.
 
 ## Skills demonstrated
 
